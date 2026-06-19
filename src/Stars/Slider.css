@@ -1,0 +1,21 @@
+.slider-section{
+    width: 100%;
+    overflow: hidden;
+    background: #efe7df;
+    padding: 4rem 0;
+}
+
+.slider-track{
+    display: flex;
+    width: max-content;
+    gap: 4rem;
+}
+
+.slider-track h1{
+    font-size: clamp(6rem,10vw,12rem);
+    font-weight: 900;
+    white-space: nowrap;
+    color: #401419;
+    letter-spacing: -4px;
+    line-height: 1;
+}

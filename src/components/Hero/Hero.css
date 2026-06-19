@@ -1,9 +1,7 @@
 .hero {
     width: 100%;
     height: 100vh;
-
     position: relative;
-
     overflow: hidden;
 }
 
@@ -12,9 +10,7 @@
 .hero-image {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     position: absolute;
     inset: 0;
 }
@@ -93,7 +89,7 @@
 }
 
 .primary-btn {
-    background: #5b1820;
+    background: #421519;
     color: white;
 }
 

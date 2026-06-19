@@ -1,0 +1,198 @@
+.reviews-section{
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 6rem 8%;
+
+    background: #421519;
+}
+
+.reviews-grid{
+    display: grid;
+
+    grid-template-columns: repeat(12,1fr);
+
+    gap: 1.5rem;
+}
+
+/* Intro Card */
+
+.review-intro{
+    grid-column: span 5;
+
+    min-height: 350px;
+
+    background: #efe0d1;
+
+    border-radius: 24px;
+
+    padding: 3rem;
+}
+
+.review-intro h2{
+    font-size: 5rem;
+
+    color: #4b1118;
+
+    font-weight: 900;
+
+    line-height: 0.95;
+}
+
+/* Review Cards */
+
+.review-card{
+    border-radius: 24px;
+
+    padding: 2rem;
+
+    transition: 0.4s ease;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.review-card:hover{
+    transform: translateY(-10px);
+
+    box-shadow:
+    0 25px 40px rgba(0,0,0,0.18);
+}
+
+.review-card:nth-child(2){
+    background: #f5f5f5;
+}
+
+.review-card:nth-child(3){
+    background: #e8cfd6;
+}
+
+.review-card:nth-child(4){
+    background: #e8cfd6;
+}
+
+.review-card:nth-child(5){
+    background: #efe0d1;
+}
+
+.review-card:nth-child(6){
+    background: #f5f5f5;
+}
+
+/* Masonry Layout */
+
+.review-1{
+    grid-column: span 3;
+    min-height: 350px;
+}
+
+.review-2{
+    grid-column: span 4;
+    min-height: 350px;
+}
+
+.review-3{
+    grid-column: span 6;
+    min-height: 320px;
+}
+
+.review-4{
+    grid-column: span 6;
+    min-height: 320px;
+}
+
+.review-5{
+    grid-column: span 12;
+    min-height: 260px;
+}
+
+/* Content */
+
+.stars{
+    display: flex;
+
+    gap: 0.4rem;
+
+    color: #4b1118;
+
+    font-size: 0.9rem;
+
+    margin-bottom: 1rem;
+}
+
+.review-text{
+    color: #4f363b;
+    line-height: 1.8;
+    font-size: 1.4rem;
+    flex: 1;
+}
+
+.review-user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.user-avatar{
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: rgba(75,17,24,0.15);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #4b1118;
+
+    font-weight: 700;
+}
+
+.review-user span{
+    color: #4b1118;
+
+    font-weight: 600;
+}
+
+/* Tablet */
+
+@media(max-width:1024px){
+
+    .reviews-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .review-intro,
+    .review-1,
+    .review-2,
+    .review-3,
+    .review-4,
+    .review-5{
+        grid-column: span 1;
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .reviews-section{
+        padding: 4rem 6%;
+    }
+
+    .reviews-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .review-intro h2{
+        font-size: 3rem;
+    }
+
+}

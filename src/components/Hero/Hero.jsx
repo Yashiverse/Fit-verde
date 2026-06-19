@@ -1,16 +1,14 @@
 import "./Hero.css";
-import series1 from "../../assets/series1.png";
+import HeroImage from "../../assets/series1.png";
 
 function Hero() {
   return (
     <section id="hero" className="hero">
-
       <img
-        src={series1}
+        src={HeroImage}
         alt="Fitverde Hero"
         className="hero-image"
       />
-
       <div className="hero-overlay">
 
         <div className="hero-top">

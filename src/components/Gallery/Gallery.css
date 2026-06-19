@@ -1,5 +1,175 @@
-#main{
-    height: 700px;
-    background-color: rgb(231, 203, 180);
+.gallery-section{
     width: 100%;
+    min-height: 120vh;
+    padding: 8rem 8%;
+    background: #efe7df;
+    position: relative;
+    overflow: hidden;
+}
+
+/* TOP HEADING */
+
+.gallery-heading-top{
+    position: relative;
+    z-index: 2;
+}
+
+.gallery-heading-top h2{
+    font-size: clamp(4rem, 8vw, 8rem);
+    line-height: 0.9;
+    font-weight: 900;
+    color: #401419;
+    letter-spacing: -4px;
+    max-width: 1000px;
+}
+
+/* CARDS */
+
+.gallery-content{
+    position: relative;
+    min-height: 620px;
+    z-index: 4;
+}
+
+/* CARD POSITIONS */
+
+.gallery-card-1{
+    background: #411919;
+    color: #efe7df;
+    position: absolute;
+    border-radius: 18px;
+    left: 5%;
+    top: 0;
+    height: 14rem;
+}
+
+.gallery-card-2{
+    background: #d5b9c9;
+    color: #33111d;
+    position: absolute;
+    right: 5%;
+    top: 120px;
+    height: 14rem;
+    border-radius: 18px;
+}
+
+.gallery-card-3{
+    background: #dfcab6;
+    color: #301515;
+    position: absolute;
+    left: 25%;
+    top: 300px;
+    height: 14rem;
+    border-radius: 18px;
+}
+
+.gallery-card-1,
+.gallery-card-2,
+.gallery-card-3{
+    width: min(28rem, 90vw);
+}
+
+.gallery-card-1 h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+}
+
+.gallery-card-2 h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+}
+
+.gallery-card-3 h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+}
+
+.gallery-card-1 p{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+}
+
+.gallery-card-2 p{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+}
+
+.gallery-card-3 p{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+}
+
+/* BOTTOM HEADING */
+
+.gallery-heading-bottom{
+    margin-top: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.gallery-heading-bottom h2{
+    font-size: clamp(4rem, 8vw, 8rem);
+    line-height: 0.9;
+    font-weight: 900;
+    letter-spacing: -4px;
+    color: #401419;
+    text-align: right;
+}
+
+
+/* TABLET */
+
+@media(max-width:1024px){
+
+    .gallery-content{
+        min-height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 2rem;
+    }
+
+    .gallery-card{
+        position: static;
+
+        width: 100%;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .gallery-section{
+        padding: 5rem 6%;
+    }
+
+    .gallery-heading-top h2,
+    .gallery-heading-bottom h2{
+        font-size: 3rem;
+
+        letter-spacing: -2px;
+    }
+
+    .gallery-card h3{
+        font-size: 1.5rem;
+    }
+
+    .floating-circle{
+        width: 250px;
+        height: 250px;
+    }
 }

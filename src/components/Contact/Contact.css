@@ -1,0 +1,281 @@
+#contact{
+    width: 100%;
+}
+
+/* ========================= */
+/* TOP SECTION */
+/* ========================= */
+
+.contact-top{
+    display: flex;
+    min-height: 100vh;
+}
+
+.contact-top-image{
+    flex: 1;
+}
+
+.contact-top-image img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.contact-top-content{
+    flex: 1;
+
+    background: #421519;
+
+    color: #f4dfd5;
+
+    padding: 6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-top-content h2{
+    font-size: 5rem;
+
+    font-weight: 900;
+
+    line-height: 0.95;
+
+    margin-bottom: 2rem;
+}
+
+.contact-top-content h2 span{
+    font-style: italic;
+    font-weight: 400;
+}
+
+.contact-top-content p{
+    color: #d8c1c5;
+
+    line-height: 1.8;
+
+    max-width: 500px;
+
+    margin-bottom: 1rem;
+
+    font-size: 1.05rem;
+}
+
+/* ========================= */
+/* BOTTOM SECTION */
+/* ========================= */
+
+.contact-bottom{
+    display: flex;
+
+    min-height: 100vh;
+
+    background: #efe7df;
+}
+
+.contact-form-section{
+    flex: 1;
+
+    padding: 6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form-section h2{
+    font-size: 5rem;
+
+    color: #421519;
+
+    font-weight: 900;
+
+    line-height: 0.95;
+
+    margin-bottom: 2rem;
+}
+
+.contact-form-section h2 span{
+    font-style: italic;
+    font-weight: 400;
+}
+
+.contact-form-section p{
+    max-width: 550px;
+
+    color: #5f474b;
+
+    line-height: 1.8;
+
+    font-size: 1.05rem;
+}
+
+/* ========================= */
+/* FORM */
+/* ========================= */
+
+.consultation-tag{
+    color: #7a5a60;
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+    margin-bottom: 0.5rem;
+
+    letter-spacing: 0.5px;
+}
+
+.contact-form{
+    width: 100%;
+
+    max-width: 650px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.2rem;
+
+    margin-top: 2rem;
+}
+
+.input-row{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+    width: 100%;
+
+    padding: 1rem 1.2rem;
+
+    border-radius: 16px;
+
+    border: 1px solid rgba(90,23,31,0.12);
+
+    background: rgba(255,255,255,0.9);
+
+    font-size: 1rem;
+
+    color: #421519;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color: #9b7c82;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+    border-color: #421519;
+
+    box-shadow:
+    0 0 0 4px rgba(90,23,31,0.08);
+}
+
+.contact-form textarea{
+    min-height: 180px;
+
+    resize: none;
+}
+
+.contact-form button{
+    width: fit-content;
+
+    padding: 1rem 2rem;
+
+    border: none;
+
+    border-radius: 999px;
+
+    background: #421519;
+
+    color: white;
+
+    font-size: 0.95rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover{
+    transform: translateY(-4px);
+
+    background: #421519;
+
+    box-shadow:
+    0 12px 25px rgba(90,23,31,0.18);
+}
+
+/* ========================= */
+/* IMAGE */
+/* ========================= */
+
+.contact-bottom-image{
+    flex: 1;
+}
+
+.contact-bottom-image img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:1024px){
+
+    .contact-top,
+    .contact-bottom{
+        flex-direction: column;
+    }
+
+    .contact-top-content,
+    .contact-form-section{
+        padding: 4rem;
+    }
+
+    .contact-top-content h2,
+    .contact-form-section h2{
+        font-size: 4rem;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .input-row{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-top-content h2,
+    .contact-form-section h2{
+        font-size: 3rem;
+    }
+
+    .contact-top-content,
+    .contact-form-section{
+        padding: 3rem 2rem;
+    }
+
+}

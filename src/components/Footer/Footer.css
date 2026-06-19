@@ -1,0 +1,136 @@
+.footer{
+    background: #421519;
+    overflow: hidden;
+    padding-top: 5rem;
+}
+
+.footer-top{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 4rem;
+    padding: 0 8%;
+}
+
+.footer h3{
+    color: #f4d7dc;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+/* Newsletter */
+
+.footer-newsletter p{
+    color: #dcc2c7;
+    line-height: 1.8;
+    max-width: 380px;
+    margin-bottom: 1rem;
+}
+
+.footer-newsletter input{
+    width: 80%;
+    max-width: 300px;
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.footer-newsletter button{
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 999px;
+    background: #efe0d1;
+    color: #5a171f;
+    font-weight: 700;
+    margin-left: 4px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.footer-newsletter button:hover{
+    transform: translateY(-3px);
+}
+
+/* Socials */
+
+.socials{
+    display: flex;
+    gap: 1rem;
+    color: #f4d7dc;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Links */
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a{
+    color: #dcc2c7;
+    text-decoration: none;
+    margin-bottom: 0.8rem;
+    transition: 0.3s;
+}
+
+.footer-links a:hover{
+    color: white;
+}
+
+/* Contact */
+
+.footer-contact p{
+    color: #dcc2c7;
+    margin-bottom: 0.8rem;
+    line-height: 1.7;
+}
+
+/* Brand */
+
+.footer-brand{
+    text-align: center;
+    font-size: clamp(5rem, 15vw, 16rem);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -8px;
+    color: #e8cfd6;
+    margin-top: 4rem;
+}
+
+/* Bottom */
+
+.footer-bottom{
+    text-align: center;
+    color: #d7bcc1;
+    padding: 1rem 0 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+
+@media(max-width:1024px){
+
+    .footer-top{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .footer-top{
+        grid-template-columns: 1fr;
+
+        gap: 3rem;
+    }
+
+    .footer-brand{
+        letter-spacing: -3px;
+    }
+
+}

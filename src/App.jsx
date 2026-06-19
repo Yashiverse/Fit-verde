@@ -6,6 +6,9 @@ import Plans from "./components/Plans/Plans";
 import Reviews from "./components/Reviews/Reviews";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Slider from  "./stars/Slider";
+import HeatSlider from "./stars/HeatSlider";
+
 
 function App() {
   return (
@@ -15,9 +18,11 @@ function App() {
         <Navbar />
         <Hero />
         <Gallery />
+        <Slider/>
         <Services />
         <Plans />
         <Reviews />
+        <HeatSlider/>
         <Contact />
       </main>
 
