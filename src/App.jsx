@@ -6,9 +6,9 @@ import Plans from "./components/Plans/Plans";
 import Reviews from "./components/Reviews/Reviews";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import Slider from  "./stars/Slider";
-import HeatSlider from "./stars/HeatSlider";
-import Stats from "./stars/Stats";
+import Slider from  "./Stars/Slider";
+import HeatSlider from "./Stars/HeatSlider";
+import Stats from "./Stars/Stats";
 
 
 function App() {
