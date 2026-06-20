@@ -5,18 +5,34 @@ gsap.registerPlugin(ScrollTrigger);
 
 export const galleryAnimation = () => {
 
-    gsap.from(".gallery-content", {
-        scroller: "body",
-        y:250,
-        stagger:0.2,
-        duration:3,
+    const tl = gsap.timeline({
         scrollTrigger: {
-            trigger: ".gallery-content",
-            start: "top 80%",
-            end:"top 15%",
-            scrub:3,
-            toggleActions: "play none none none"
+            trigger: ".gallery-section",
+            start: "top 45%",
+            toggleActions: "play reverse play reverse"
         }
     });
+
+    tl.from(".gallery-card-1", {
+        x: -180,
+        scale: 0.9,
+        duration: 1.2,
+        ease: "power3.out"
+    })
+
+    .from(".gallery-card-2", {
+        x: 180,
+        scale: 0.9,
+        duration: 1.2,
+        ease: "power3.out"
+    }, "-=0.9")
+
+    .from(".gallery-card-3", {
+        y: 120,
+        scale: 0.9,
+        duration: 1.2,
+        ease: "power3.out"
+    }, "-=0.9");
+
 
 };

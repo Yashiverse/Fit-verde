@@ -94,7 +94,7 @@
 
 .footer-brand{
     text-align: center;
-    font-size: clamp(5rem, 15vw, 16rem);
+    font-size: 10rem;
     font-weight: 900;
     line-height: 1;
     letter-spacing: -8px;
@@ -131,6 +131,7 @@
 
     .footer-brand{
         letter-spacing: -3px;
+        font-size: 70px;
     }
 
 }

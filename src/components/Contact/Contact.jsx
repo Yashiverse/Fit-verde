@@ -4,6 +4,7 @@ import contact1 from "../../assets/contact1.png";
 import contact2 from "../../assets/contact2.png";
 
 function Contact() {
+
   return (
     <section id="contact">
 
@@ -34,6 +35,28 @@ function Contact() {
             our team is here to guide you.
           </p>
 
+          <div className="whatsapp-buttons">
+
+            <a
+              href="https://wa.me/918218592357?text=Hello%20Fitverde!%20%F0%9F%91%8B%0A%0AI%20came%20across%20your%20website%20and%20I'm%20interested%20in%20learning%20more%20about%20your%20fitness%20and%20wellness%20programs.%0A%0ACould%20you%20please%20guide%20me%20regarding%20workout%20plans,%20nutrition%20support,%20and%20the%20best%20option%20for%20my%20goals?%0A%0AThank%20you!"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whatsapp-btn"
+            >
+              CONNECT WITH COACH
+            </a>
+
+            <a
+              href="https://wa.me/917017333420?text=Hello%20Fitverde!%20%F0%9F%91%8B%0A%0AI%20came%20across%20your%20website%20and%20I'm%20interested%20in%20learning%20more%20about%20your%20fitness%20and%20wellness%20programs.%0A%0ACould%20you%20please%20guide%20me%20regarding%20workout%20plans,%20nutrition%20support,%20and%20the%20best%20option%20for%20my%20goals?%0A%0AThank%20you!"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whatsapp-btn"
+            >
+              CONNECT WITH AST. COACH
+            </a>
+
+          </div>
+
         </div>
 
       </div>
@@ -55,51 +78,10 @@ function Contact() {
             workout, nutrition, and wellness plan for your lifestyle.
           </p>
 
-          <form className="contact-form">
-
-            <p className="consultation-tag">
-              Free Consultation • Personalized Guidance
-            </p>
-
-            <div className="input-row">
-
-              <input
-                type="text"
-                placeholder="Full Name"
-              />
-
-              <input
-                type="email"
-                placeholder="Email Address"
-              />
-
-            </div>
-
-            <div className="input-row">
-
-              <input
-                type="tel"
-                placeholder="Phone Number"
-              />
-
-              <select>
-                <option>Select Plan</option>
-                <option>Move Plan</option>
-                <option>Transform Plan</option>
-                <option>Elite Plan</option>
-              </select>
-
-            </div>
-
-            <textarea
-              placeholder="Tell us about your fitness goals..."
-            ></textarea>
-
-            <button type="submit">
-              BOOK FREE CONSULTATION
-            </button>
-
-          </form>
+          <button className="contact-btn" onClick={() =>
+             window.open("https://forms.gle/QZYEJVxD1wctmQdg9","_blank" )}>
+            BOOK FREE CONSULTATION
+          </button>
 
         </div>
 

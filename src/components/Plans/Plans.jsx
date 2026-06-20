@@ -6,6 +6,8 @@ import plan2 from "../../assets/plan2.png";
 import plan3 from "../../assets/plan3.png";
 
 function Plans() {
+
+
   const plans = {
     move: {
       image: plan1,

@@ -8,6 +8,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Slider from  "./stars/Slider";
 import HeatSlider from "./stars/HeatSlider";
+import Stats from "./stars/Stats";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <main>
         <Navbar />
         <Hero />
+        <Stats />
         <Gallery />
         <Slider/>
         <Services />

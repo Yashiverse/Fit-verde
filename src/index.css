@@ -6,9 +6,17 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x:hidden;
+    width: 100%;
 }
 
 body{
     overflow-x: hidden;
     font-family: sans-serif;
+    width: 100%;
+}
+
+#root{
+    overflow-x:hidden;
+    width: 100%;
 }

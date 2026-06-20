@@ -1,12 +1,17 @@
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
+import gsap from "gsap";
 import "./Gallery.css";
 import { galleryAnimation } from "../../animations/galleryAnimation";
 
 function Gallery() {
 
-  useEffect(() =>{
-    galleryAnimation();
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      galleryAnimation();
+    });
+    return () => ctx.revert();
   }, []);
+  
 
   return (
     <section className="gallery-section">
